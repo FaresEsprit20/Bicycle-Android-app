@@ -1,0 +1,91 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.activities.SignUpActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3DEE6"
+    >
+
+    <!-- ScrollViews can only have 1 child View, so the 1st LinearLayout below
+         will be the "container" -->
+
+    <LinearLayout
+        android:id="@+id/lnr2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edSignUpLastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:hint="@string/hint_last_name"
+            android:inputType="text"
+            android:textColor="?android:attr/colorForeground" />
+
+        <EditText
+            android:id="@+id/edSignUpFirstName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:hint="@string/hint_first_name"
+            android:inputType="text"
+            android:textColor="?android:attr/colorForeground" />
+
+        <EditText
+            android:id="@+id/edSignUpEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:hint="@string/hint_email"
+            android:inputType="textEmailAddress"
+            android:textColor="?android:attr/colorForeground" />
+
+        <EditText
+            android:id="@+id/edSignUpPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:hint="@string/hint_password"
+            android:inputType="textPassword"
+            android:textColor="?android:attr/colorForeground" />
+
+        <EditText
+            android:id="@+id/edSignUpPasswordRepeat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:hint="Repeat Password"
+            android:inputType="textPassword"
+            android:textColor="?android:attr/colorForeground" />
+
+        <EditText
+            android:id="@+id/edSignUpPhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:hint="@string/hint_phone_number"
+            android:inputType="phone"
+            android:textColor="?android:attr/colorForeground" />
+
+        <!--        android:text="Doe"-->
+        <!--        android:text="John"-->
+        <!--        android:text="john.doe@esprit.tn"-->
+        <!--        android:text="password"-->
+        <!--        android:text="99112233"-->
+
+        <Button
+            android:id="@+id/btn_signUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@android:color/holo_green_dark"
+            android:onClick="doSignUp"
+            android:text="@string/btnSignUp"
+            android:textColor="@color/colorTextWhite" />
+
+    </LinearLayout>
+
+</ScrollView>

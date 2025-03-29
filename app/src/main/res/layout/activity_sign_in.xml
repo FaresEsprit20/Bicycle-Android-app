@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="#F3DEE6"
+    tools:context=".ui.activities.SignInActivity">
+
+    <EditText
+        android:id="@+id/edSignInEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:hint="@string/hint_email"
+        android:inputType="textEmailAddress"
+        android:textColor="?android:attr/colorForeground" />
+
+    <EditText
+        android:id="@+id/edSignInPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:hint="@string/hint_password"
+        android:inputType="textPassword"
+        android:textColor="?android:attr/colorForeground" />
+
+    <CheckBox
+        android:id="@+id/cbRememberMe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:text="@string/rememberMe"
+        android:textColor="?android:attr/colorForeground" />
+
+    <Button
+        android:id="@+id/btn_signIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@android:color/holo_green_dark"
+        android:onClick="SignIn"
+        android:text="@string/btnSignIn"
+        android:textColor="@color/colorTextWhite" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/colorPrimary" />
+
+    <Button
+        android:id="@+id/btn_signUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@android:color/holo_green_dark"
+        android:onClick="goToSignUp"
+        android:text="@string/btnSignUp"
+        android:textColor="@color/colorTextWhite" />
+
+
+
+</LinearLayout>
