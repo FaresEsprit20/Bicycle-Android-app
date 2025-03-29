@@ -1,4 +1,4 @@
-package com.example.miniprojetandroid.ui.activities;
+package com.example.bicycle;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -8,8 +8,17 @@ import android.widget.Button;
 import android.widget.TextView;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-import com.example.miniprojetandroid.R;
-import com.example.miniprojetandroid.models.User;
+
+import com.example.R;
+import com.example.bicycle.models.User;
+import com.example.bicycle.ui.activities.AddEventActivity;
+import com.example.bicycle.ui.activities.ContactActivity;
+import com.example.bicycle.ui.activities.EventActivity;
+import com.example.bicycle.ui.activities.MapBoxActivity;
+import com.example.bicycle.ui.activities.RentActivity;
+import com.example.bicycle.ui.activities.SignInActivity;
+import com.example.bicycle.ui.activities.TrackActivity;
+import com.example.bicycle.ui.activities.UpdateProfile;
 
 
 public class MainActivity extends AppCompatActivity {
