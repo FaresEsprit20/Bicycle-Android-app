@@ -13,9 +13,9 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.R;
+import com.example.bicycle.database.AppDataBase;
 import com.example.bicycle.models.Bike;
 import com.example.bicycle.models.User;
-import com.example.miniprojetandroid.database.AppDataBase;
 
 
 

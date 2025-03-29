@@ -13,8 +13,8 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.R;
+import com.example.bicycle.database.AppDataBase;
 import com.example.bicycle.models.Bike;
-import com.example.miniprojetandroid.database.AppDataBase;
 import com.squareup.picasso.Picasso;
 
 public class FavouritesAdapter extends RecyclerView.Adapter<FavouritesAdapter.BikesViewHolder> {
