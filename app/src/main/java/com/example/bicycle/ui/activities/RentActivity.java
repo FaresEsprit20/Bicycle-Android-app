@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.R;
 import com.example.bicycle.ui.fragments.DetailsFragment;
 import com.example.bicycle.ui.fragments.FragmentOne;
 import com.example.bicycle.ui.fragments.FragmentThree;

@@ -1,10 +1,14 @@
-package com.example.miniprojetandroid.database;
+package com.example.bicycle.database;
 
 
 import android.content.Context;
 
+import androidx.room.Database;
+import androidx.room.Room;
+import androidx.room.RoomDatabase;
+
 import com.example.bicycle.dao.BikeDao;
-import com.example.miniprojetandroid.models.Bike;
+import com.example.bicycle.models.Bike;
 
 @Database(entities = {Bike.class}, version = 3, exportSchema = false)
 public abstract class AppDataBase extends RoomDatabase {

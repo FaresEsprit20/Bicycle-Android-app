@@ -2,7 +2,10 @@ package com.example.bicycle.ui.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-
+import okhttp3.ResponseBody;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 import com.example.R;
 import com.example.bicycle.ui.fragments.EventsFragment;
 
