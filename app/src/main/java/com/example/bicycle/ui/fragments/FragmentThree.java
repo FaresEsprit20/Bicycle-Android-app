@@ -14,6 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.R;
 import com.example.bicycle.Retrofit.BikeService;
+import com.example.bicycle.Retrofit.RetrofitClient;
 import com.example.bicycle.adapters.FavouritesAdapter;
 import com.example.bicycle.models.Bike;
 

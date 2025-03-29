@@ -16,6 +16,7 @@ import android.view.ViewGroup;
 
 import com.example.R;
 import com.example.bicycle.Retrofit.RentService;
+import com.example.bicycle.Retrofit.RetrofitClient;
 import com.example.bicycle.adapters.RentsAdapter;
 import com.example.bicycle.models.Bike;
 import com.example.bicycle.models.Location;
@@ -23,7 +24,10 @@ import com.example.bicycle.models.User;
 
 import java.util.ArrayList;
 import java.util.List;
-
+import okhttp3.ResponseBody;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 
 public class FragmentTwo extends Fragment implements RentsAdapter.Callback{

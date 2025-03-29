@@ -14,12 +14,16 @@ import android.view.ViewGroup;
 
 import com.example.R;
 import com.example.bicycle.Retrofit.EventService;
+import com.example.bicycle.Retrofit.RetrofitClient;
 import com.example.bicycle.adapters.EventsAdapter;
 import com.example.bicycle.models.Event;
 
 import java.util.ArrayList;
 import java.util.List;
-
+import okhttp3.ResponseBody;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 
 public class EventsFragment extends Fragment implements EventsAdapter.Callback{

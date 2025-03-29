@@ -12,13 +12,17 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.R;
+import com.example.bicycle.Retrofit.RetrofitClient;
 import com.example.bicycle.Retrofit.ShopService;
 import com.example.bicycle.adapters.ShopAdapter;
 import com.example.bicycle.models.Shop;
 
 import java.util.ArrayList;
 import java.util.List;
-
+import okhttp3.ResponseBody;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 
 public class ShopsFragment extends Fragment implements ShopAdapter.Callback{

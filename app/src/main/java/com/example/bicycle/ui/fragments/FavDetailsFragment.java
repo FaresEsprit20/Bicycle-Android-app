@@ -13,6 +13,7 @@ import com.example.R;
 import com.example.bicycle.models.Bike;
 
 
+
 public class FavDetailsFragment extends Fragment {
 
 

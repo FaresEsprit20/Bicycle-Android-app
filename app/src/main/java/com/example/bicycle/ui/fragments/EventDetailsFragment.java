@@ -14,8 +14,14 @@ import android.widget.Toast;
 
 import com.example.R;
 import com.example.bicycle.Retrofit.EventService;
+import com.example.bicycle.Retrofit.RetrofitClient;
 import com.example.bicycle.models.Event;
 import com.example.bicycle.models.User;
+
+import okhttp3.ResponseBody;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 
 public class EventDetailsFragment extends Fragment {

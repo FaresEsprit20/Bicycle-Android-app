@@ -15,14 +15,19 @@ import android.widget.Toast;
 
 
 import com.example.R;
+import com.example.bicycle.Retrofit.RetrofitClient;
 import com.example.bicycle.Retrofit.TrackService;
 import com.example.bicycle.adapters.TrackAdapter;
 import com.example.bicycle.models.Record;
+import com.example.bicycle.models.User;
 
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-
+import okhttp3.ResponseBody;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 public class RecordListFragment extends Fragment implements TrackAdapter.Callback {
 

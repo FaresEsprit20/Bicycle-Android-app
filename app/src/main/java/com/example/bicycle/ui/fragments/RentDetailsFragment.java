@@ -13,12 +13,16 @@ import android.widget.Toast;
 
 import com.example.R;
 import com.example.bicycle.Retrofit.RentService;
+import com.example.bicycle.Retrofit.RetrofitClient;
 import com.example.bicycle.models.Bike;
 import com.example.bicycle.models.Location;
 import com.example.bicycle.models.User;
 
 import java.io.IOException;
-
+import okhttp3.ResponseBody;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 
 public class RentDetailsFragment extends Fragment {
