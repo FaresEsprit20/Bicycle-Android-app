@@ -1,6 +1,7 @@
 package com.example.bicycle.ui.activities;
 
 import android.Manifest;
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
@@ -38,7 +39,6 @@ import com.mapbox.maps.plugin.locationcomponent.LocationComponentUtils;
 import java.util.ArrayList;
 import java.util.List;
 
-import kotlin.Unit;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -225,44 +225,37 @@ public class MapBoxActivity extends AppCompatActivity {
         }
     }
 
+    @SuppressLint("Lifecycle")
     @Override
     protected void onStart() {
         super.onStart();
         mapView.onStart();
     }
 
+    @SuppressLint("Lifecycle")
     @Override
     protected void onStop() {
         super.onStop();
         mapView.onStop();
     }
 
+    @SuppressLint("Lifecycle")
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        if (pointAnnotationManager != null) {
-            pointAnnotationManager.destroy();
-        }
         mapView.onDestroy();
     }
 
-    @Override
-    protected void onResume() {
-        super.onResume();
-        mapView.onResume();
-    }
 
-    @Override
-    protected void onPause() {
-        super.onPause();
-        mapView.onPause();
-    }
-
+    // ONLY NEED TO HANDLE ACTIVITY'S onSaveInstanceState
     @Override
     protected void onSaveInstanceState(@NonNull Bundle outState) {
         super.onSaveInstanceState(outState);
-        mapView.onSaveInstanceState(outState);
+        // No need to call mapView.onSaveInstanceState() - handled automatically
     }
+
+
+
 
 
 
