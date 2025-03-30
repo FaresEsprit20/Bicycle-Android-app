@@ -4,7 +4,6 @@ import android.Manifest;
 import android.content.Context;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
@@ -20,7 +19,6 @@ import androidx.core.content.res.ResourcesCompat;
 
 import com.example.R;
 import com.example.bicycle.Retrofit.MapService;
-import com.example.bicycle.Retrofit.RetrofitClient;
 import com.example.bicycle.models.BikeCyclist;
 import com.example.bicycle.models.Circuit;
 import com.example.bicycle.models.Community;
@@ -40,6 +38,7 @@ import com.mapbox.maps.plugin.locationcomponent.LocationComponentUtils;
 import java.util.ArrayList;
 import java.util.List;
 
+import kotlin.Unit;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -80,10 +79,11 @@ public class MapBoxActivity extends AppCompatActivity {
 
             LocationComponentPlugin locationPlugin = LocationComponentUtils.getLocationComponent(mapView);
             locationPlugin.setEnabled(true);
+
             locationPlugin.updateSettings(settings -> {
                 settings.setEnabled(true);
                 settings.setPulsingEnabled(true);
-                return settings;
+                return null; // Required for Java compatibility
             });
 
         } else {
@@ -94,7 +94,6 @@ public class MapBoxActivity extends AppCompatActivity {
             );
         }
     }
-
     private void loadAllData() {
         fillDataShops();
         fillDataCircuits();
@@ -264,4 +263,7 @@ public class MapBoxActivity extends AppCompatActivity {
         super.onSaveInstanceState(outState);
         mapView.onSaveInstanceState(outState);
     }
+
+
+
 }
