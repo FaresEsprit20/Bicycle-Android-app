@@ -46,8 +46,6 @@ public class FavouritesAdapter extends RecyclerView.Adapter<FavouritesAdapter.Bi
                 .load("http://10.0.2.2:3000/" + singleItem.getImage())
                 .resize(40, 40)
                 .centerCrop()
-                .placeholder(R.drawable.placeholder_image) // Add default placeholder
-                .error(R.drawable.error_image) // Add error placeholder
                 .into(holder.BikeImage);
 
         holder.bikeDelete.setOnClickListener(v -> {

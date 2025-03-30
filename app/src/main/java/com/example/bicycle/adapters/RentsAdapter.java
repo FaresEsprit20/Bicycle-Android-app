@@ -44,8 +44,8 @@ public class RentsAdapter extends RecyclerView.Adapter<RentsAdapter.RentsViewHol
                 .load("http://10.0.2.2:3000/" + singleItem.getBike().getImage())
                 .resize(80, 80)
                 .centerCrop()
-                .placeholder(R.drawable.ic_bike_placeholder) // Add placeholder
-                .error(R.drawable.ic_broken_image) // Add error image
+//                .placeholder(R.drawable.ic_bike_placeholder) // Add placeholder
+//                .error(R.drawable.ic_broken_image) // Add error image
                 .into(holder.RentImage);
 
         holder.rentView.setOnClickListener(v -> mCallback.onItemClicked(singleItem));
