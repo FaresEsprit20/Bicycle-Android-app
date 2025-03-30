@@ -1,6 +1,5 @@
 plugins {
     alias(libs.plugins.android.application)
-
 }
 
 android {
@@ -81,5 +80,7 @@ dependencies {
 
     // optional - Paging 3 Integration
     implementation("androidx.room:room-paging:$room_version")
-    implementation ("com.mapbox.maps:android:11.11.0")
+    implementation ("com.mapbox.maps:android:10.16.0")
+
+
 }
